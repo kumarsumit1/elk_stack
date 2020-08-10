@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  elk_stack:
+    image: elk_stack
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 9200
+      - 5600 
+      - 9001
